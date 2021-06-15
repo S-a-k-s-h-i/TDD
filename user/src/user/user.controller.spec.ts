@@ -112,24 +112,24 @@ describe('UserController', () => {
       PhoneNo:123456
     })
 
-    // it('should get all the users',() => {
-    //   expect(controller.getAll().toEqual([
-    //     {
-    //       id:1,
-    //       name:'anjali',
-    //       password:'anjali',
-    //       age:20,
-    //       PhoneNo:124567
-    //     },
-    //     {
-    //       id:2,
-    //       name:'sakshi',
-    //       password:'password',
-    //       age:23,
-    //       PhoneNo:123456
-    //     }
-    //   ]))
-    // })
+    it('should get all the users',() => {
+      expect(controller.getAll().toEqual([
+        {
+          id:1,
+          name:'anjali',
+          password:'anjali',
+          age:20,
+          PhoneNo:124567
+        },
+        {
+          id:2,
+          name:'sakshi',
+          password:'password',
+          age:23,
+          PhoneNo:123456
+        }
+      ]))
+    })
   })
 
 

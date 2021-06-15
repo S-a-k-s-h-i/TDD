@@ -10,7 +10,7 @@ export class UserController {
    constructor(private usersService:UserService){}
    
    @Get()
-   getAll(@Query('name') name:string):Promise<User[] | User>{
+   getAll(@Query('name') name?:string):Promise<User[] | User>{
        return this.usersService.getAllUser(name)
    }
    
